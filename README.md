@@ -9,55 +9,47 @@ This project focuses on predicting the CO2 injection rate using historical data.
 
 The dataset includes:
 
-Time-based data with timestamps.
+1. Time-based data with timestamps.
 
-Sensor readings including wellhead pressure, temperature, and CO2 vent rate.
+2. Sensor readings including wellhead pressure, temperature, and CO2 vent rate.
 
-Derived features such as interaction terms and rolling means.
+3. Derived features such as interaction terms and rolling means.
 
 ## Files:
 
-CO2_Injection_rate_train.csv: Training data.
+1. CO2_Injection_rate_train.csv: Training data.
 
-CO2_Injection_rate_test.csv: Test data.
+2. CO2_Injection_rate_test.csv: Test data.
 
 ## Preprocessing Steps
 
 ### Handling DateTime:
 
-Converted Date Time to a datetime format.
+1. Converted Date Time to a datetime format.
 
-Extracted hour, day, month, year, day_of_week, and weekend indicators.
+2. Extracted hour, day, month, year, day_of_week, and weekend indicators.
 
 ### Missing Values:
 
-Forward-filled missing values.
+1. Forward-filled missing values.
 
 ### Feature Engineering:
 
-Created interaction features (e.g., pressure * temperature).
+1. Created interaction features (e.g., pressure * temperature).
 
-Computed rolling mean of CO2 vent rate.
+2. Computed rolling mean of CO2 vent rate.
 
-Derived mean pressure values by weekend/weekday.
+3. Derived mean pressure values by weekend/weekday.
 
 ### Model Training
 
-Algorithm: XGBoost Regressor.
+1. Algorithm: XGBoost Regressor.
 
-Validation: TimeSeriesSplit.
+2. Validation: TimeSeriesSplit.
 
-Hyperparameter Tuning: GridSearchCV.
+3. Hyperparameter Tuning: GridSearchCV.
 
-Evaluation Metrics
-
-Mean Squared Error (MSE)
-
-Mean Absolute Error (MAE)
-
-R-Squared Score (R²)
-
-Dependencies
+4. Evaluation Metrics: Mean Squared Error (MSE), R-Squared Score (R²)
 
 ### Install the necessary libraries using:
 ```
