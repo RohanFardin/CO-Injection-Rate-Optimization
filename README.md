@@ -1,7 +1,7 @@
 # CO-Injection-Rate-Optimization
 A machine learning repository for predicting CO₂ Injection Rates for Carbon Capture and Storage
 
-Overview
+# Overview
 
 This project focuses on predicting the CO2 injection rate using historical data. The dataset contains various sensor readings such as pressure, temperature, and CO2 vent rate, along with timestamps. The project utilizes machine learning techniques, particularly XGBoost, to analyze and forecast CO2 injection rates over time.
 
